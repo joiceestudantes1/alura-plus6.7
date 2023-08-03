@@ -19,6 +19,8 @@ boby{
     background-image: url("img/banckgrournd.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
  }
 
  .container{
@@ -33,5 +35,22 @@ boby{
   padding: 1em;
   color:var(--branco-principal);
   display:block;
+  text-decoration: nome;
  }
+
+ .botao_segundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+ }
+
+ .container_aviso{
+    font-size: 12px
+     color; var(--cinza-segundario) 
+ }
+
+ .container_titulo{
+    font-size: 12px;
+    font-weight: 700;
+ }
+
 
