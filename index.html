@@ -1,63 +1,23 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this file,
+   - You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; object-src 'none'; script-src resource: chrome:; connect-src https:; img-src https: data: blob: chrome:; style-src 'unsafe-inline';">
+    <meta name="color-scheme" content="light dark">
+    <title data-l10n-id="newtab-page-title">New Tab</title>
+    <link rel="icon" type="image/png" href="chrome://branding/content/icon32.png">
+    <link rel="localization" href="branding/brand.ftl">
+    <link rel="localization" href="browser/branding/brandings.ftl">
+    <link rel="localization" href="browser/newtab/newtab.ftl">
+    <link rel="stylesheet" href="chrome://browser/content/contentSearchUI.css">
+    <link rel="stylesheet" href="chrome://activity-stream/content/css/activity-stream.css">
+  </head>
+  <body class="activity-stream" style="--newtab-search-icon: url(moz-extension://0b8496ad-896c-40e3-b798-7ed703b29f7a/favicon.ico);">
+    <div id="root"><div><span><button class="icon icon-settings personalize-button personalize-animate-appear-done personalize-animate-enter-done" data-l10n-id="newtab-personalize-icon-label" title="Personalize new tab" aria-label="Personalize new tab"></button><div class="customize-menu" role="dialog" data-l10n-id="newtab-personalize-dialog-label" aria-label="Personalize"><button class="close-button" data-l10n-id="newtab-custom-close-button">Close</button><div></div><div class="home-section"><div id="shortcuts-section" class="section"><label class="switch"><input id="shortcuts-toggle" type="checkbox" preference="feeds.topsites" aria-labelledby="custom-shortcuts-title" aria-describedby="custom-shortcuts-subtitle" eventsource="TOP_SITES" checked="checked"><span class="slider" role="presentation"></span></label><div><h2 id="custom-shortcuts-title" class="title"><label for="shortcuts-toggle" data-l10n-id="newtab-custom-shortcuts-title">Shortcuts</label></h2><p id="custom-shortcuts-subtitle" class="subtitle" data-l10n-id="newtab-custom-shortcuts-subtitle">Sites you save or visit</p><div class="more-info-top-wrapper"><div class="more-information" style="margin-top: 0px;"><select id="row-selector" class="selector" name="row-count" preference="topSitesRows" aria-labelledby="custom-shortcuts-title"><option value="1" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 1}" selected="selected">1 row</option><option value="2" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 2}">2 rows</option><option value="3" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 3}">3 rows</option><option value="4" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 4}">4 rows</option></select><div class="check-wrapper" role="presentation"><input id="sponsored-shortcuts" class="sponsored-checkbox" type="checkbox" preference="showSponsoredTopSites" eventsource="SPONSORED_TOP_SITES" checked="checked"><label class="sponsored" for="sponsored-shortcuts" data-l10n-id="newtab-custom-sponsored-sites">Sponsored shortcuts</label></div></div></div></div></div><div id="recent-section" class="section"><label class="switch"><input id="highlights-toggle" type="checkbox" preference="feeds.section.highlights" eventsource="HIGHLIGHTS" aria-labelledby="custom-recent-title" aria-describedby="custom-recent-subtitle"><span class="slider" role="presentation"></span></label><div><h2 id="custom-recent-title" class="title"><label for="highlights-toggle" data-l10n-id="newtab-custom-recent-title">Recent activity</label></h2><p id="custom-recent-subtitle" class="subtitle" data-l10n-id="newtab-custom-recent-subtitle">A selection of recent sites and content</p></div></div><span class="divider" role="separator"></span><div><button id="settings-link" class="external-link" data-l10n-id="newtab-custom-settings">Manage more settings</button></div></div></div></span><div class="outer-wrapper ds-outer-wrapper-breakpoint-override visible-logo"><main class=""><div class="non-collapsible-section"><div class="search-wrapper"><div class="logo-and-wordmark"><div class="logo"></div><div class="wordmark"></div></div><div class="search-inner-wrapper"><button class="search-handoff-button" data-l10n-id="newtab-search-box-handoff-input" data-l10n-args="{&quot;engine&quot;:&quot;Google&quot;}" tabindex="-1" title="Search with Google or enter address" aria-label="Search with Google or enter address"><div class="fake-textbox" data-l10n-id="newtab-search-box-handoff-text" data-l10n-args="{&quot;engine&quot;:&quot;Google&quot;}">Search with Google or enter address</div><input type="search" class="fake-editable" tabindex="-1" aria-hidden="true"><div class="fake-caret"></div></button></div></div></div><div class="body-wrapper on"><div class="discovery-stream ds-layout"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div class="ds-top-sites "><section class="collapsible-section top-sites" data-section-id="topsites"><div class="section-top-bar"><h3 class="section-title-container " style="visibility: hidden;"><span class="section-title"><span data-l10n-id="newtab-section-header-topsites">Top Sites</span></span><span class="learn-more-link-wrapper"></span></h3></div><div><ul class="top-sites-list"><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.amazon.com.br/?tag=admarketbr-20&amp;ref=pd_sl_9ccfc061b325f27c025f0d6ce4e44df2deb64cab97b020a2f791186f&amp;mfadid=adm" tabindex="0" draggable="true" data-is-sponsored-link="true"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="A"><div class="top-site-icon rich-icon" style="background-image: url(&quot;https://contile-images.services.mozilla.com/obgoOYObjIFea_bXuT6L4LbBJ8j425AD87S1HMD3BWg.9991.jpg&quot;);"></div></div></div><div class="title sponsored"><span dir="auto">Amazon<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored">Sponsored</span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Amazon&quot;}" class="context-menu-button icon" title="Open menu" aria-label="Open context menu for Amazon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.trivago.com.br/?cip=55030800040913&amp;cip_tc=12891-101-101_privacy_1691667117401000000&amp;cip_ext_id=1691667117401000000&amp;sOrderBy=random&amp;mfadid=adm" tabindex="0" draggable="true" data-is-sponsored-link="true"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="T"><div class="top-site-icon rich-icon" style="background-image: url(&quot;https://contile-images.services.mozilla.com/lmZ3gwMZNLw0Tj1SfkfZMGVWNAyMEBU7qThwdKnHjR8.10271.jpg&quot;);"></div></div></div><div class="title sponsored"><span dir="auto">Trivago<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored">Sponsored</span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Trivago&quot;}" class="context-menu-button icon" title="Open menu" aria-label="Open context menu for Trivago"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.youtube.com/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="Y"><div class="top-site-icon rich-icon" style="background-image: url(&quot;chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png&quot;);"></div></div></div><div class="title"><span dir="auto">YouTube<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored">Sponsored</span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;YouTube&quot;}" class="context-menu-button icon" title="Open menu" aria-label="Open context menu for YouTube"></button></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.facebook.com/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="F"><div class="top-site-icon rich-icon" style="background-image: url(&quot;chrome://activity-stream/content/data/content/tippytop/images/facebook-com@2x.png&quot;);"></div></div></div><div class="title"><span dir="auto">Facebook<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored">Sponsored</span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Facebook&quot;}" class="context-menu-button icon" title="Open menu" aria-label="Open context menu for Facebook"></button></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.wikipedia.org/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="W"><div class="top-site-icon rich-icon" style="background-image: url(&quot;chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png&quot;);"></div></div></div><div class="title"><span dir="auto">Wikipedia<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored">Sponsored</span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Wikipedia&quot;}" class="context-menu-button icon" title="Open menu" aria-label="Open context menu for Wikipedia"></button></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.reddit.com/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="R"><div class="top-site-icon rich-icon" style="background-image: url(&quot;chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png&quot;);"></div></div></div><div class="title"><span dir="auto">Reddit<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored">Sponsored</span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Reddit&quot;}" class="context-menu-button icon" title="Open menu" aria-label="Open context menu for Reddit"></button></div></div></li><li class="top-site-outer hide-for-narrow"><div class="top-site-inner"><a class="top-site-button" href="https://twitter.com/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="T"><div class="top-site-icon rich-icon" style="background-image: url(&quot;chrome://activity-stream/content/data/content/tippytop/images/twitter-com@2x.png&quot;);"></div></div></div><div class="title"><span dir="auto">Twitter<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored">Sponsored</span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Twitter&quot;}" class="context-menu-button icon" title="Open menu" aria-label="Open context menu for Twitter"></button></div></div></li><li class="top-site-outer placeholder hide-for-narrow"><div class="top-site-inner"><a class="top-site-button" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper"><div class=""></div></div></div><div class="title"><span dir="auto"><br><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored">Sponsored</span></span></div></a><button aria-haspopup="true" class="context-menu-button edit-button icon" data-l10n-id="newtab-menu-topsites-placeholder-tooltip" title="Edit this site" aria-label="Edit this site"></button></div></li></ul><div class="edit-topsites-wrapper"></div></div></section></div></div></div></div><style data-styles="[[null]]"></style></div><div class="discovery-stream ds-layout"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div></div></div></div><style data-styles="[[null]]"></style></div></div></main></div></div></div>
+    <div id="footer-asrouter-container" role="presentation"></div>
+  
 
-<head>
-    <title>alura plus</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <section class="container principal">
-        </div>
-    <h1>com o combo+,voce pode aproveitar a alura+ e o alura lingua por um preço único.
-    <img src=="img/combo.png"alt="o combo+ é a junçao do alura+ e o alura lingua">
-    <a href="www.alura.com.br" class="container_botao">assine po 12x de R$120,00*
-        <a href="www.alura.com.br" class="container_botao">assine somente o alura+</a>
-        <P class="container_aviso">*o preço pode variar caso a assinatura seja feita em outros planos</P>
-    </div>
-    <section>
-
-    <section class="container_ segundario">
-     <img src="img/ plataforma.png" alt="um monitor e um celular com o alura plus aberto" class="segundaria_imagem">
-      <div classe=" container_descricao">
-    <h2 class="descricao_titulo">assista do seu jeito</h2>
-    <p class="descricao_titulo">aproveita a tela grande da tv ou assistano tabet,latop,celular e outras aparelho.
-        A nossa seleçao de cursos nao para de <crescer</p>
-
-      </div>
-    </section>
-
-    <section class="container_segundario"></section>
-    <div class="container_descricao"></div>
-    <P class=" descricao_texto"></P>
-
-
-
-
-
-    </section>
-
-    <section class="container_segundario">
-        <img src="img/notebook.png" alt="notebook com a pagina a pagina do curso html e css da alura aberta" class="segundaria_imagem">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<imag
+</body></html>
